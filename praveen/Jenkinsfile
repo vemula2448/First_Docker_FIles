@@ -10,7 +10,9 @@ pipeline {
 
         stage('Build') {
             steps {
+                dir('praveen') {
                 bat 'mvn clean package'
+                }
             }
         }
 
